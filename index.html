@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="anthology">
+	<head>
+		<title>NFL Super Bowl Anthology | With Angularjs 1.x</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<script type="text/javascript" src="http://code.angularjs.org/1.4.12/angular.min.js"></script>
+		<script type="text/javascript" src="http://code.angularjs.org/1.4.12/angular-route.min.js"></script>
+		<script type="text/javascript" src="http://code.angularjs.org/1.4.12/angular-resource.min.js"></script>
+		<script type="text/javascript" src="js/anthology-app.js"></script>
+		<script type="text/javascript" src="js/routes.js"></script>
+		<script type="text/javascript" src="js/services.js"></script>
+		<script type="text/javascript" src="js/controllers/anthologyController.js"></script>
+		<script type="text/javascript" src="js/controllers/superbowlController.js"></script>
+<!--		<script type="text/javascript" src="js/directives/directives.js"></script> -->
+	</head>
+	<body>
+		<a href="/#/">Anthology Home</a> | <a href="/#/superbowl">Superbowl</a>
+		<div ng-view></div>
+	</body>
+</html>
