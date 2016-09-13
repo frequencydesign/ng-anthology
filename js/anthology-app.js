@@ -1,1 +1,1 @@
-angular.module("anthology", ["ngRoute"]);
+angular.module("anthology", ["ngRoute","ngResource"]);

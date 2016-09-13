@@ -11,9 +11,5 @@ angular.module("anthology")
 		templateUrl: "page-templates/superbowl.html",
 		controller: "superbowlController"
 	})
-	.when("/superbowl", {
-		templateUrl: "page-templates/superbowl.html",
-		controller: "superbowlController"
-	})
 	.otherwise({redirectTo : '/'})
 });
