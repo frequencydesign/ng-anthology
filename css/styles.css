@@ -1,3 +1,8 @@
+@font-face {font-family: Endzone Sans Light Cond;
+		src: url("http://nflcdns.nfl.com/static/content/public/static/wildcat/assets/fonts/endzone-sans/light-cond.woff")
+		format("woff");
+}
+
 .flex-grid {
     display: flex;
 }
@@ -28,6 +33,8 @@
     box-sizing: border-box;
 }
 body {
+		font-family:Georgia, Arial,sans-serif;
+		font-size:14px;
     margin: 0;
     padding: 0;
 }
@@ -44,9 +51,15 @@ body {
     background-position: center 0px;
     background-repeat: no-repeat;
 }
+
+#anthology-landing {
+		font-family: 'Endzone Sans Light Cond', 'Helvetica Neue', Arial, sans-serif; font-size: 30px; margin: auto auto 200px; max-width: 1000px; text-align: center;
+}
+
 .superbowl-title {
     color: rgb(255, 255, 255);
     font-family: 'Endzone Sans Light Cond', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: normal;
     font-size: 80px;
     letter-spacing: 8px;
     margin: 0;
