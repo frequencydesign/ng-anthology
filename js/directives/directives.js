@@ -10,7 +10,14 @@ angular.module("anthology")
 .directive("matchRomanNumeral", function() {
 	return {
 		restrict: "E",
-		templateUrl: "js/directives/matchRomanNumeral.html?11",
+		templateUrl: "js/directives/matchRomanNumeral.html",
+		replace: true
+	}
+})
+.directive("footer", function() {
+	return {
+		restrict: "E",
+		templateUrl: "js/directives/footer.html",
 		replace: true
 	}
 })

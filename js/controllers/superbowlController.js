@@ -1,5 +1,7 @@
 angular.module("anthology")
 
-.controller("superbowlController", function() {
-	
-})
+.controller("superbowlController", ["$scope", "superbowlDataService", function($scope, superbowlDataService) {
+
+	$scope.superbowlData = superbowlDataService.GetSuperbowlData();
+
+}])

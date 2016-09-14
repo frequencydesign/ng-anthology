@@ -22,4 +22,19 @@ angular.module("anthology")
 
 	};
 
-}]);
+}])
+
+.service("superbowlDataService", ["$resource", function($resource) {
+
+	this.GetSuperbowlData = function() {
+
+
+			//var superbowlListJSON = $resource("http://api.myjson.com/bins/loey");
+			var superbowlDataJSON = $resource("/data/superbowl.json");
+			return superbowlDataJSON.get();
+
+			//return $resource("/data/matches.json").get();
+
+	};
+
+}])
