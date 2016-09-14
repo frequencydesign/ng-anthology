@@ -16,8 +16,10 @@ angular.module("anthology")
 
 			//var superbowlListJSON = $resource("http://api.myjson.com/bins/loey");
 			var superbowlListJSON = $resource("/data/matches.json");
-
 			return superbowlListJSON.get();
+
+			//return $resource("/data/matches.json").get();
+
 	};
 
 }]);

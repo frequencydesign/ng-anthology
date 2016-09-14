@@ -1,10 +1,10 @@
-<a href="/#/superbowl/1968" class="match-link-container">
+<a href="/#/superbowl/{{match.year}}" class="match-link">
 	<div>
-		<div class="match-year">1968</div>
+		<div class="match-year">{{match.year}}</div>
 		<div>
-			<span class="match-city">GB</span>
-			<span class="roman-numeral">II</span>
-			<span class="match-city">OAK</span>
+			<span class="match-city">{{match.teams[0].abbr}}</span>
+			<span class="roman-numeral">{{match.romanNumeral}}</span>
+			<span class="match-city">{{match.teams[1].abbr}}</span>
 		</div>
 	</div>
 </a>
