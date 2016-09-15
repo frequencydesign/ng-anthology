@@ -169,7 +169,7 @@ body {
     color: rgb(255, 255, 255); font-family: 'Endzone Sans Light Cond', 'Helvetica Neue', Arial, sans-serif; font-size: 30px; height: 64px; position: fixed; text-align: center; top: 0px; width: 100%; z-index: 5; background-color: rgba(0, 0, 0, 0.701961);
 }
 
-.random-header-div {
+.header-content {
     font-size: 26px; letter-spacing: 1px; line-height: 58px; padding-left: 20px; position: relative;
 }
 

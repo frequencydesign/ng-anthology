@@ -1,0 +1,18 @@
+<div class="my-superbowl article" id="my-superbowl" tabindex="-1">
+	<div class="article-header">
+		<button class="collapse-text-button collapse">X</button>
+		<button class="collapse-text-button-absolute collapse">X</button>
+	  	<h2>
+	    	{{title}}
+	    	<div class="gold-bottom-border"></div>
+	  	</h2>
+	</div>
+	<div><!-- ng-repeat="(key, value) in myObj" -->
+	 <!-- ng-repeat="paragraph in text" -->
+	  	<p class="article-content" ng-repeat="paragraph in text">
+	    	<b class="bolded-first-text" ng-show="{{paragraph.intro}}">{{paragraph.intro}}</b>
+	    	{{paragraph.text}}
+	  	</p>
+	</div>
+	<button class="read-more" id="readMoreButton"><span class="read-more-text">read more...</span></button>
+</div>

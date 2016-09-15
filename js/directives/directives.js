@@ -14,10 +14,35 @@ angular.module("anthology")
 		replace: true
 	}
 })
-.directive("matchScores", function() {
+.directive("gameHeader", function() {
 	return {
 		restrict: "E",
-		templateUrl: "js/directives/matchScores.html",
-		replace: false
+		templateUrl: "js/directives/gameHeader.html",
+		replace: true
+	}
+})
+.directive("gameHero", function() {
+	return {
+		restrict: "E",
+		templateUrl: "js/directives/gameHero.html",
+		replace: true
+	}
+})
+.directive("gameScores", function() {
+	return {
+		restrict: "E",
+		templateUrl: "js/directives/gameScores.html",
+		replace: true
+	}
+})
+.directive("gameArticle", function() {
+	return {
+		restrict: "E",
+		templateUrl: "js/directives/gameArticle.html",
+		replace: true,
+		scope: {
+			title: "@",
+			text: "="
+		}
 	}
 })
