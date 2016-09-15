@@ -151,3 +151,123 @@ body {
     margin: 10px 14px;
     color: rgb(204, 153, 51);
 }
+
+
+
+/*  SUPER BOWL DETAIL PAGE  */
+
+#header {
+    color: rgb(255, 255, 255); font-family: 'Endzone Sans Light Cond', 'Helvetica Neue', Arial, sans-serif; font-size: 30px; height: 64px; position: fixed; text-align: center; top: 0px; width: 100%; z-index: 5; background-color: rgba(0, 0, 0, 0.701961);
+}
+
+.random-header-div {
+    font-size: 26px; letter-spacing: 1px; line-height: 58px; padding-left: 20px; position: relative;
+}
+
+.header-home-link {
+    text-decoration: none;
+}
+
+#headerHomeButton {
+    color: rgb(255, 255, 255); display: inline-block; left: 0px; line-height: 50px; padding-left: 0px; position: relative; text-decoration: none; text-transform: uppercase;
+}
+
+.header-home-button-icon {
+    content: ''; height: 20px; position: absolute; left: -30px; top: 13px; width: 24px; background-image: url('http://nflcdns.nfl.com/static/content/public/static/img/anthology/home.png'); background-repeat: no-repeat;
+}
+
+.game-hero-bg {
+    height: 500px; position: relative; text-align: center; width: 100%; background-color: gray; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;
+}
+
+.game-hero-overlay {
+    bottom: 0px; position: absolute; left: 0px; right: 0px; top: 0px; background-image: url('http://nflcdns.nfl.com/static/content/public/static/img/anthology/hero_overlay.png'); background-position: center top;
+}
+
+.game-hero-date {
+    font-family: Times; font-size: 30px; font-style: italic; padding: 130px 0px 0px; position: relative;
+}
+
+.game-hero-year {
+    color: rgb(255, 255, 255); padding: 10px;
+}
+
+.game-hero-logo {
+    width: 50%;
+}
+
+.game-score-container {
+    display: flex; padding: 40px 0; position: relative;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+}
+
+.game-score-away {
+    flex: 1 1 auto; text-align: center;
+}
+
+.game-score-home {
+    flex: 1 1 auto; text-align: center;
+}
+
+@media (min-width: 768px)
+.game-score-away, .game-score-home {
+    max-width: 284px !important;
+}
+
+.game-score-team {
+    font-family: Georgia, Arial, sans-serif; font-size: 24px; font-style: italic; min-height: 48px; text-transform: uppercase;
+}
+
+.game-score {
+    font-family: 'Endzone Sans Light Cond', 'Helvetica Neue', Arial, sans-serif; font-size: 72px;
+}
+
+.game-score-vs {
+    border-bottom: 1px solid rgb(204, 153, 51); color: rgb(204, 153, 51); display: inline-block; font-family: Georgia, Arial, sans-serif; font-size: 16px; font-style: italic; bottom: 50px; line-height: 40px; margin-left: -23px; position: absolute; text-align: center; width: 60px;
+}
+
+.my-superbowl {
+    font-family: Georgia, Arial, sans-serif; font-size: 18px; line-height: 34px; padding: 80px 100px; position: relative; background-color: rgb(240, 241, 242);
+}
+
+.my-superbowl-header {
+    margin: auto; max-width: 900px;
+}
+
+.my-superbowl h2 {
+    font-family: 'Endzone Sans Light Cond', 'Helvetica Neue', Arial, sans-serif; font-size: 34px; margin: auto auto 40px; position: relative; text-align: center; text-transform: uppercase;
+}
+
+.my-superbowl h2 .gold-bottom-border {
+    bottom: -16px; content: ''; height: 1px; left: 50%; margin-left: -30px; position: absolute; width: 60px; background-color: rgb(204, 153, 51);
+}
+
+.my-superbowl-content {
+    margin: 0px auto 26px; max-width: 800px;
+}
+
+.bolded-first-text {
+    font-weight: bold; margin-right: 6px;
+}
+
+.read-more {
+    border: 1px solid rgb(204, 204, 204); cursor: pointer; display: block; margin: 80px auto 0px; padding: 5px; text-decoration: none; width: 244px;
+}
+
+.read-more-text {
+    color: rgb(255, 255, 255); display: block; font-style: italic; padding: 4px 0px; position: relative; text-align: center; text-decoration: none; background-color: rgb(204, 153, 51);
+}
+
+.collapse-text-button {
+    border: 1px solid rgb(203, 204, 205); cursor: pointer; border-radius: 22px; color: rgb(204, 153, 51); font-family: 'Endzone Sans Light Cond', 'Helvetica Neue', Arial, sans-serif; font-size: 30px; height: 44px; line-height: 44px; position: absolute; right: 100px; text-align: center; text-decoration: none; width: 44px; z-index: 2; background-color: rgb(255, 255, 255);
+}
+
+.collapse-text-button-absolute {
+    border: 1px solid rgb(203, 204, 205); cursor: pointer; border-radius: 22px; color: rgb(204, 153, 51); font-family: 'Endzone Sans Light Cond', 'Helvetica Neue', Arial, sans-serif; font-size: 30px; height: 44px; line-height: 44px; position: fixed; right: 100px; text-align: center; text-decoration: none; width: 44px; z-index: 2; top: 100px; background-color: rgb(255, 255, 255);
+}
