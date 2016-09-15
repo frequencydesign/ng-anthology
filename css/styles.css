@@ -46,6 +46,15 @@ body {
     margin: 0;
     padding: 0;
 }
+.footer {
+    background: #000; display: block; margin: 0 auto; width: 100%;
+}
+.footer-content {
+    color: #ccc; font-family: Arial,sans-serif; font-size: 11px; margin: auto; line-height: 13px; max-width: 600px;
+}
+.footer-logo {
+    float: left; margin: 0px 28px 0px 0px; width: 40px;
+}
 .flex-grid {
     margin: 0 0 20px 0;
 }

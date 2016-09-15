@@ -1,10 +1,10 @@
 angular.module("anthology")
 // DIRECTIVES
-.directive("matchRow", function() {
+.directive("footer", function() {
 	return {
 		restrict: "E",
-		templateUrl: "js/directives/matchRow.html",
-		replace: false
+		templateUrl: "js/directives/footer.html",
+		replace: true
 	}
 })
 .directive("matchRomanNumeral", function() {
@@ -14,10 +14,10 @@ angular.module("anthology")
 		replace: true
 	}
 })
-.directive("footer", function() {
+.directive("matchScores", function() {
 	return {
 		restrict: "E",
-		templateUrl: "js/directives/footer.html",
-		replace: true
+		templateUrl: "js/directives/matchScores.html",
+		replace: false
 	}
 })
