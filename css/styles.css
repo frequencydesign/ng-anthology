@@ -40,6 +40,10 @@
     vertical-align: baseline;
     tap-highlight-color: transparent;
 }
+:focus {
+    outline: none;
+}
+
 body {
 	font-family: Georgia, Arial,sans-serif;
 	font-size:14px;
