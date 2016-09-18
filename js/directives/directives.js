@@ -38,7 +38,7 @@ angular.module("anthology")
 .directive("gameArticle", function() {
 	return {
 		restrict: "E",
-		templateUrl: "js/directives/gameArticle.html?34",
+		templateUrl: "js/directives/gameArticle.html",
 		replace: true,
 		scope: {
 			title: "@",
@@ -49,15 +49,9 @@ angular.module("anthology")
 	}
 })
 .directive("gameArticleContent", function() {
-
-/*	$scope.IsHidden = false;
-	function ShowHide() {
-		$scope.IsHidden = $scope.IsHidden ? false : true;
-	}*/
-
 	return {
 		restrict: "E",
-		templateUrl: "js/directives/gameArticleContent.html?50",
+		templateUrl: "js/directives/gameArticleContent.html",
 		replace: true,
 		scope: {
 			text: "=",
