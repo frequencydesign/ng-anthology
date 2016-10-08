@@ -1,7 +1,7 @@
 <div class="article" tabindex="-1">
 	<div class="article-header">
 		<!-- <button class="collapse-text-button collapse" ng-show="!isVisible" ng-click="showHide()">X</button> -->
-		<button class="collapse-text-button-absolute collapse" ng-show="!isVisible" ng-click="showHide()">X</button>
+		<button class="collapse-text-button-absolute collapse" ng-hide="!isVisible" ng-click="isVisible = !isVisible">X</button>
 	  	<h2>
 	    	{{title}}
 	    	<div class="gold-bottom-border"></div>
@@ -9,14 +9,14 @@
 	</div>
 	<!-- <game-article-content text="text" is-visible="isVisible" show-hide="showHide()"></game-article-content> -->
 	<div>
-	  	<p class="article-content" ng-show="isVisible">
+	  	<p class="article-content" ng-hide="isVisible">
 	    	<b class="bolded-first-text" ng-show="{{text[0].intro}}">{{text[0].intro}}</b>
 	    	{{text[0].text}}
 	  	</p>
-		<p class="article-content" ng-hide="isVisible" ng-repeat="paragraph in text">
+		<p class="article-content" ng-show="isVisible" ng-repeat="paragraph in text">
 			<b class="bolded-first-text" ng-show="{{paragraph.intro != '' && paragraph.intro.length > 1}}">{{paragraph.intro}}</b>
 			{{paragraph.text}}
 		</p>
 	</div>
-	<button class="read-more" id="readMoreButton" ng-click="showHide($event)"><span class="read-more-text">read more...</span></button>
+	<button class="read-more" id="readMoreButton" ng-click="isVisible = !isVisible"><span class="read-more-text">read more...</span></button>
 </div>

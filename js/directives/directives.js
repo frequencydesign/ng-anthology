@@ -36,30 +36,22 @@ angular.module("anthology")
 	}
 })
 .directive("gameArticle", function() {
-	var theIsVisible = true;
+	//var theIsVisible = true;
 	return {
 		restrict: "E",
-		templateUrl: "js/directives/gameArticle.html?4",
+		templateUrl: "js/directives/gameArticle.html?5",
 		replace: true,
 		scope: {
 			title: "@",
 			text: "=",
-			isVisible: "=",
+			isVisible: "=?",
 			showHide: "&"
 		},
+		controller: function($scope) {
+
+		},
 		link: function(scope, element, attrs) {
-			//var isVisible = scope.isVisible;
-/*			var showHide = function() {
-				scope.isVisible = scope.isVisible ? false : true;
-			};*/
-			scope.isVisible = theIsVisible;
-			scope.showHide = function() {
-				scope.isVisible = scope.isVisible ? false : true;
-			};
-			console.log(scope);
-			console.log(element);
-			console.log(scope.isVisible);
-			console.log(scope.showHide);
+
 		}
 	}
 })
