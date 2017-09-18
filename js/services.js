@@ -38,3 +38,24 @@ angular.module("anthology")
 	};
 
 }])
+
+.service("superbowlSQLDataService", ["$resource", function($resource) {
+
+	this.GetSuperbowlSQLData = function(year) {
+
+		console.log("services year ", year);
+
+		//var superbowlListJSON = $resource("http://api.myjson.com/bins/loey");
+		//var addressDataJSON = $resource("http://127.0.0.1:3000/api/Addresses/4");
+		//var addressDataJSON = $resource("http://127.0.0.1:3000/api/Addresses/" + year);
+
+
+		var superbowlSQLDataJSON = $resource("http://127.0.0.1:3000/api/Superbowls/" + year);
+		//return superbowlSQLDataJSON.query(); // .query for ARRAY
+		return superbowlSQLDataJSON.get();
+
+		//return $resource("/data/matches.json").get();
+
+	};
+
+}])
