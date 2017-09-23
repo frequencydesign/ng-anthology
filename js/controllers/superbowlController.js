@@ -20,7 +20,7 @@ angular.module("anthology")
 	$scope.year = getParameterByName('year');
 
 	$scope.superbowlSQLData = superbowlSQLDataService.GetSuperbowlSQLData($scope.year);
-
+window.scrollTo(0, 0);
 	console.log($scope.year);
 	console.log($scope.superbowlSQLData);
 
